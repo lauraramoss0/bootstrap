@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <%@ include file = "../templates/navbar.jsp" %> 
     <div class="container">
         <h1>Remover Livro</h1>
         <form action="/livros/delete" method="post">

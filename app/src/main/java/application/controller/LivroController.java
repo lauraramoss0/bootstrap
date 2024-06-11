@@ -16,14 +16,14 @@ import application.repository.GeneroRepository;
 import application.repository.LivroRepository;
 
 @Controller
-@RequestMapping("/livros")
+@RequestMapping({"/","/livros"})
 public class LivroController {
     @Autowired
     private LivroRepository livrosRepo;
     @Autowired
     private GeneroRepository generosRepo;
 
-    @RequestMapping("/list")
+    @RequestMapping({"","/list"})
     public String list(Model ui) {
         ui.addAttribute("livros", livrosRepo.findAll());
         return "/livro/list";

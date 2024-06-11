@@ -11,6 +11,7 @@
         </head>
 
         <body>
+            <%@ include file = "../templates/navbar.jsp" %> 
             <div class="container">
                 <h1>Editar Livro</h1>
                 <form action="/livros/update" method="post">
